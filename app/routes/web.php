@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PlayerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/* ----------------------------------------------------------------
+| Dashboard Route
+----------------------------------------------------------------*/
+
 Route::get('/', function () {
     return view('dashboard');
 });
+
+
+/* ----------------------------------------------------------------
+| ck editor Route
+----------------------------------------------------------------*/
+Route::get('ckeditor', [CkeditorController::class, 'index']);
+Route::post('ckeditor/upload', [CkeditorController::class, 'upload'])->name('ckeditor.upload');
+
+
+
+/* ----------------------------------------------------------------
+| Model Routes
+----------------------------------------------------------------*/
+Route::resource('players', PlayerController::class);

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en">
 
 <head>
     <!-- Required meta tags -->
@@ -69,14 +69,11 @@
                     <span class="fa fa-bars"></span>
                 </button>
 
-
-
-
                 <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
                     <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
                         <span class="fa fa-bars"></span>
                     </button>
-                    <div class=" header-item   clock-wapper">
+                    <div class="header-item clock-wapper">
                         <h6 id="demo"></h6>
                     </div>
                     {{-- <div class="mx-auto align-self-center pr-61">
@@ -87,7 +84,7 @@
                     </div> --}}
 
 
-                    <div class=" fullscreen m-auto-cus mx-4">
+                    <div class="fullscreen m-auto-cus mx-4 ml-auto">
                         <button class="btn btn-outline-info btn-icon " id="btnFullscreen" type="button"><span
                                 class="fa fa-expand  my-auto"></span></button>
                     </div>
@@ -397,7 +394,6 @@
     </script>
 
     {{-- clock --}}
-    {{-- canvas --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 
     <script>
@@ -410,13 +406,13 @@
     </script>
 
 
-    {{-- <script>
+    <script>
         document.querySelectorAll('.CkEditor').forEach((item, index) => {
             CKEDITOR.replace(item, {
                 filebrowserUploadUrl: "{{ route('ckeditor.upload', ['_token' => csrf_token()]) }}",
                 filebrowserUploadMethod: 'form',
                 extraPlugins: 'html5video,youtube,justify',
-                language: 'fa',
+                language: 'en',
                 options: ['left', 'right'],
                 // youtube_width = '640',
                 // youtube_height = '480',
@@ -428,7 +424,7 @@
                 // youtube_controls = true
             }, );
         });
-    </script> --}}
+    </script>
 
 
 

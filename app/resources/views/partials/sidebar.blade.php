@@ -27,7 +27,7 @@
                     </div>
                     <div class="profile-name">
                         {{-- <h5 class="my-2 font-weight-normal mx-2 ">{{ $adminInfo->name }}</h5> --}}
-                        <span class="mx-2 ">ادمین</span>
+                        <span class="mx-2 ">Admin Panel</span>
                     </div>
                 </div>
                 <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="fa fa-ellipsis-v"></i></a>
@@ -44,18 +44,18 @@
                 </div>
             </div>
         </li>
-        <li class="nav-item nav-category">
+        {{-- <li class="nav-item nav-category">
             <span class="nav-link">دسترسی ها</span>
-        </li>
-
-        {{-- <li class="nav-item menu-items">
-            <a class="nav-link" href="{{ route('admin.users.index') }}">
-                <span class="menu-icon mx-2 ">
-                    <i class="fa fa-tachometer-alt text-success"></i>
-                </span>
-                <span class="menu-title">کاربران</span>
-            </a>
         </li> --}}
+
+        <li class="nav-item menu-items mt-4">
+            <a class="nav-link" href="{{ route('players.index') }}">
+                <span class="menu-icon mx-2 ">
+                    <i class="fa fa-users text-success"></i>
+                </span>
+                <span class="menu-title">Players</span>
+            </a>
+        </li>
 
 
 

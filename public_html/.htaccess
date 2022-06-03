@@ -1,21 +1,17 @@
-# <IfModule mod_rewrite.c>
-#     <IfModule mod_negotiation.c>
-#         Options -MultiViews -Indexes
-#     </IfModule>
+<VirtualHost *:80>
 
-#     RewriteEngine On
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/new_site/public
 
-#     # Handle Authorization Header
-#     RewriteCond %{HTTP:Authorization} .
-#     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+        <Directory />
+                Options FollowSymLinks
+                AllowOverride None
+        </Directory>
+        <Directory /var/www/new_site>
+                AllowOverride All
+        </Directory>
 
-#     # Redirect Trailing Slashes If Not A Folder...
-#     RewriteCond %{REQUEST_FILENAME} !-d
-#     RewriteCond %{REQUEST_URI} (.+)/$
-#     RewriteRule ^ %1 [L,R=301]
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
 
-#     # Send Requests To Front Controller...
-#     RewriteCond %{REQUEST_FILENAME} !-d
-#     RewriteCond %{REQUEST_FILENAME} !-f
-#     RewriteRule ^ index.php [L]
-# </IfModule>
+</VirtualHost>
