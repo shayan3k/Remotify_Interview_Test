@@ -16,13 +16,17 @@ afterwards run the following command to migrate and seed the database
 
 to run the project, you do not need to install vendor and node_modules as I have configured .gitignore for easier use.
 
+<code>
+      php artisan serve
+</code>
+
 furthermore, It was possible to dockerize the project but I believe in this case it would be a overkill.
 
 I have used my preffered dashboard from my previous projects for this assignment as it had all the nessesary structures. I created a model file, migration, seeder, controller, edited web.php and view files in resource directory.
 
 ## Test 2/2 - Performance Script
 
-For this assignement, luckly, I had to deal with a single file which stored in /app/app/Console/Commands/FetchMergeData.php
+For this assignement, luckly, I had to deal with a single file which is stored in /app/app/Console/Commands/FetchMergeData.php
 
 Optimization is a must in this assignment so I tried to make my api calls as minimal as possible to print the result like the sample.
 
