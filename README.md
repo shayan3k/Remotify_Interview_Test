@@ -38,7 +38,10 @@ If you faced the issue, rerun the command
 <code>
 cd app && php artisan FetchMergeData
 </code>
+<br/>
+<br/>
+<br/>
 
-Please do not hasitate to ask if you need anything,
+##Please do not hasitate to ask if you need anything,
 Thanks,
 Shayan3k
