@@ -1,28 +1,29 @@
 # Hi Chiristine! ✌(ツ)
 
-To get started with the project, I have to explain a bit about the project and the project structed as it is a linux host friendly structred ready to be deploy, so that you could follow easier.
+To get started with the project, I believe, I have to explain a bit about it and the project's structure as it is a linux host friendly structured ready to be deployed.
 
 ## Test 1/2 - DB Script
 
-For the first part of the test, I have implemented a CRUD operation with works with Laravel Elequent PDO, Stores data, retrive, edit and remove records from database.
+For the first part of the test, I have implemented a CRUD operation which works with Laravel Elequent PDO and Stores, retrive, edit and remove records from database.
 
-To get started with the project, first please create a database with the name (DB_DATABASE=remotify_interview_test) with phpmyadmin or any other database you like, but remember to change the DB_CONNECTION accordingly.
+To get started with the project, first please create a database with the name (DB_DATABASE=remotify_interview_test) using mysql or any other database you like, but remember to change the DB_CONNECTION accordingly.
 
-afterwards run the following command to migrate and seed the database
+Afterwards run the following command to migrate and seed the database
 
 <code>
       cd app && php artisan migrate:fresh --seed --force
 </code>
 
-to run the project, you do not need to install vendor and node_modules as I have configured .gitignore for easier use.
+to run the project use the following command, you do not need to install vendor and node_modules as I have configured .gitignore for easier use.
 
 <code>
       php artisan serve
 </code>
 
-furthermore, It was possible to dockerize the project but I believe in this case it would be a overkill.
 
-I have used my preffered dashboard from my previous projects for this assignment as it had all the nessesary structures. I created a model file, migration, seeder, controller, edited web.php and view files in resource directory.
+furthermore, It was possible to dockerize the project but I believe in this case it would be an overkill.
+
+I have used my preferred dashboard from my previous projects for this assignment as it had all the nessesary structures. I created a model file, migration, seeder, controller, edited web.php in route and view files in resource directory.
 
 ## Test 2/2 - Performance Script
 
@@ -38,6 +39,6 @@ If you faced the issue, rerun the command
 cd app && php artisan FetchMergeData
 </code>
 
-Please do not hasitate to ask if you need something,
+Please do not hasitate to ask if you need anything,
 Thanks,
 Shayan3k
