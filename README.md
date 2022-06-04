@@ -13,12 +13,14 @@ Afterwards run the following command to migrate and seed the database
 <code>
       cd app && php artisan migrate:fresh --seed --force
 </code>
+<br/>
 
 to run the project use the following command, you do not need to install vendor and node_modules as I have configured .gitignore for easier use.
 
 <code>
       php artisan serve
 </code>
+<br/>
 
 
 furthermore, It was possible to dockerize the project but I believe in this case it would be an overkill.
